@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="success.html">
+            <div class="my-3">
+                <input type="text" value="form-control" id="email" />
+            </div>
+            <div class="my-3">
+                <input type="password" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary">전송</button>
+            <button type="button" class="btn btn-danger">닫기</button>
+        </form>
+        <script>
+            // $(선택자).동작함수1().동작함수2()
+            // 선택자를 이용하여 원하는 html요소를 선택하고, 동작 함수를 정의하여 선택된 요소에 원하는 동작을 설정
+            // $('#ssd') = document.getElementById('ssd')
+            // 전송 버튼 눌렀을 때 input에 입력된 값이 공백이면 알림 뛰어주세요
+            // $('form').on('submit',function(){
+            //     if(input에 입력한 값이 공백){
+            //         alert('아이디 입력하쇼');
+            //     }
+            // });
+            // function(e)를 쓰면 폼전송 막음
+            $("form").on("submit", function () {
+                if (document.getElementById("email").value == "") {
+                    alert("아이디 입력하쇼");
+                }
+            });
+
+            // 비번이 6자리 미만이면 더 길게 입력하라고 안내문 띄우기 -> length 붙여주면 돼
+            $("form").on("submit", function () {
+                if (document.getElementById("email").value.length < 6) {
+                    alert("더 길게!");
+                }
+            });
+        </script>
+    </body>
+</html>

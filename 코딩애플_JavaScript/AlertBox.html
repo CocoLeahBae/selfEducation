@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <div class="alert-box" id="alert">
+            <p id="title">알림창임</p>
+            <button onclick="닫기('none');">닫기</button>
+        </div>
+
+        <button onclick="아이디알림창()">아이디</button>
+        <button onclick="비번알림창()">비밀번호</button>
+
+        <script>
+            function 닫기() {
+                document.querySelector("title").innerHTML = "아이디입력하셈";
+                document.getElementById("alert").style.display = "block";
+            }
+
+            function 아이디알림창() {
+                document.getElementById("title").innerHTML = "아이디입력하셈";
+                document.getElementById("alert").style.display = "block";
+            }
+
+            function 비번알림창() {
+                document.getElementById("title").innerHTML = "비번입력하셈";
+                document.getElementById("alert").style.display = "block";
+            }
+        </script>
+    </body>
+</html>
