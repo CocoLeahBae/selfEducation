@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .navbar {
+                position: fixed;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class=".navbar">
+            <div class="container-fluid">
+                <span class="navbar-brand">JSShop</span>
+            </div>
+            <div style="height: 1000px"></div>
+        </nav>
+        <div
+            class="lorem"
+            style="width: 200px; height: 100; overflow-y: scroll"
+        >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            et quia laboriosam soluta fuga reprehenderit, velit labore ut
+            incidunt alias. Amet, rem deserunt asperiores dolores optio
+            blanditiis non possimus saepe?
+        </div>
+
+        <script>
+            // window.addEventListener("scroll", function () {
+            //     console.log(window.scrollBy(100));
+            // });
+
+            // 스크롤을 100이상 내리면 navbar 글씨가 작아지게 하기
+            // document가 수직으로 얼마나 스크롤 됐는지 픽셀단위로 반환
+
+            // 밑에 코드는 페이지 로드될 때 딱 한번 실행
+            if (window.scrollY > 100) {
+                $(".navbar-brand").css("font-size", "20px");
+            }
+
+            // 스크롤바를 만질 때마다 실행
+            $(window).on("scroll", function () {
+                if (window.scrollY > 100) {
+                    $(".navbar-brand").css("font-size", "20px");
+                } else {
+                    $(".navbar-brand").css("font-size", "25px");
+                }
+            });
+
+            // 박스 끝까지 스크롤바 내리면 alert 띄우기
+            // div 스크롤바 내린 양 + 눈에 보이는 div높이 == div 실제높이
+            $(".lorem").on("scroll", function () {
+                var 스크롤양 = document.querySelector(".lorem").scrollTop;
+                var 실제높이 = document.querySelector(".lorem").scrollHeight;
+                var 스크롤양 = document.querySelector(".lorem").clientHeight;
+                if (스크롤양 + 높이 > 실제높이 - 10) {
+                    alert("다읽음");
+                }
+            });
+        </script>
+    </body>
+</html>
