@@ -1,0 +1,41 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.cont_box {
+    display: flex;
+    margin-bottom: 16px;
+}
+.cont_txt {
+    background-color: #ffffff;
+    border-radius: 0px 10px 10px 10px;
+    max-width: 240px;
+}
+.cont_blacktxt {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px 0px 10px 10px;
+    max-width: 240px;
+    align-self: end;
+}
+.my-msg {
+    justify-content: end;
+}
+.chat_txt {
+    padding: 12px;
+    margin: 0;
+    font-size: 14px;
+    white-space: normal;
+}
+.profile_none {
+    width: 42px;
+    height: 42px;
+    margin-right: 12px;
+}
+.chat_time {
+    color: #767676;
+    font-size: 10px;
+    align-self: end;
+    margin-left: 6px;
+    margin-right: 6px;
+}
