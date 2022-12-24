@@ -1,36 +1,71 @@
-body {
+.chat_wrap {
+    max-width: 390px;
+    margin: auto;
     background-color: #f2f2f2;
 }
-
-.cont_box {
+.cont_navbar {
     display: flex;
-    margin-bottom: 16px;
-}
-.cont_txt {
+    justify-content: start;
+    padding: 15px;
+    height: 48px;
     background-color: #ffffff;
-    border-radius: 0px 10px 10px 10px;
-    max-width: 240px;
 }
-.cont_blacktxt {
-    background-color: #000000;
-    color: #ffffff;
-    border-radius: 10px 0px 10px 10px;
-    max-width: 240px;
-    align-self: end;
+.img_arrow {
+    width: 22px;
+    height: 22px;
+    margin: 13px 10px;
 }
-.my-msg {
-    justify-content: end;
-}
-.chat_txt {
-    padding: 12px;
-    margin: 0;
+.nav_txt {
     font-size: 14px;
-    white-space: normal;
+    width: 312px;
+}
+.img_vertical {
+    width: 24px;
+    height: 24px;
+    margin: 13px 0;
+}
+.chat_wrap .chat {
+    padding: 16px;
+}
+.chat_wrap .chat ul {
+    padding: 0;
+    list-style: none;
+}
+.chat_wrap .chat ul li {
+    list-style: none;
+}
+.chat_wrap .chat ul.left {
+    text-align: left;
+}
+.chat_wrap .chat ul.right {
+    text-align: right;
 }
 .profile_none {
     width: 42px;
     height: 42px;
     margin-right: 12px;
+}
+.cont_wrap {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+.sender {
+    background-color: #ffffff;
+    border-radius: 0px 10px 10px 10px;
+    max-width: 240px;
+    padding: 12px;
+    margin: 0;
+    font-size: 14px;
+}
+.message {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px 0px 10px 10px;
+    max-width: 240px;
+    padding: 12px;
+    margin: 0;
+    font-size: 14px;
 }
 .chat_time {
     color: #767676;
@@ -38,4 +73,31 @@ body {
     align-self: end;
     margin-left: 6px;
     margin-right: 6px;
+}
+.input_div {
+    display: flex;
+    justify-content: start;
+    background-color: #ffffff;
+    padding: 16px;
+}
+.img_button {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+}
+
+.inp_txt {
+    font-size: 14px;
+    color: #c4c4c4;
+    border: 0;
+    padding: 0;
+    margin-left: 12px;
+}
+.btn_submit {
+    font-size: 14px;
+    color: #c4c4c4;
+    border: 0;
+    background-color: #ffffff;
+    padding: 0;
+    margin-left: 12px;
 }
