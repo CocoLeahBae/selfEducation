@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container mt-3">
+            <div class="card p-3">상품명</div>
+            <span>가격</span>
+        </div>
+        <script>
+            // var car = '소나타';
+            // var carPrice = 50000;
+            // var carColor = 'white';
+            // 한 변수에 여러 정보 저장
+            // arry       0       1        2 자리 순서개념이 있음
+            let car = ["소나타", 50000, "white"];
+
+            // object {key : value} 순서개념이 없음
+            let car2 = { name: "소나타", price: 50000 };
+            // 소나타 꺼내고 싶으면
+            console.log(car2.price);
+            // client-side rendering
+            let car3 = { name: "소나타", price: [50000, 3000, 4000] };
+            document.querySelector(".car-price").innerHTML = car2;
+        </script>
+    </body>
+</html>

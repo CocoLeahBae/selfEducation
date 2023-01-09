@@ -1,0 +1,39 @@
+.cont_chatlist {
+    position: relative;
+}
+
+.userprofile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_profile {
+    width: 42px;
+    margin-right: 12px;
+}
+
+.cont_span {
+    display: flex;
+    justify-content: space-between;
+}
+.profile_name {
+    margin-left: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+}
+.profile_chat {
+    display: block;
+    color: #767676;
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+.profile_date {
+    font-size: 10px;
+    color: #dbdbdb;
+    font-weight: normal;
+    margin-left: 70px;
+}
