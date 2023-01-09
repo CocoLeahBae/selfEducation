@@ -1,11 +1,15 @@
 .chat_wrap {
     max-width: 390px;
+    min-height: 690px;
+    max-height: 690px;
     margin: auto;
+    overflow-y: scroll;
     background-color: #f2f2f2;
 }
 .cont_navbar {
     display: flex;
     justify-content: start;
+    position: absolute;
     padding: 15px;
     height: 48px;
     background-color: #ffffff;
@@ -14,6 +18,7 @@
     width: 22px;
     height: 22px;
     margin: 13px 10px;
+    cursor: pointer;
 }
 .nav_txt {
     font-size: 14px;
@@ -23,49 +28,44 @@
     width: 24px;
     height: 24px;
     margin: 13px 0;
+    cursor: pointer;
 }
-.chat_wrap .chat {
-    padding: 16px;
+.chat_down {
+    display: flex;
+    flex-direction: column;
 }
-.chat_wrap .chat ul {
-    padding: 0;
-    list-style: none;
+.cont_box {
+    display: flex;
+
+    margin: 16px 16px 0 16px;
+    display: bottom;
 }
-.chat_wrap .chat ul li {
-    list-style: none;
+.cont_txt {
+    background-color: #ffffff;
+    border-radius: 0px 10px 10px 10px;
+    max-width: 240px;
 }
-.chat_wrap .chat ul.left {
-    text-align: left;
+.my_msg {
+    justify-content: end;
 }
-.chat_wrap .chat ul.right {
-    text-align: right;
+.cont_blacktxt {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px 0px 10px 10px;
+    max-width: 240px;
+    align-self: end;
+}
+
+.chat_txt {
+    padding: 12px;
+    margin: 0;
+    font-size: 14px;
+    white-space: normal;
 }
 .profile_none {
     width: 42px;
     height: 42px;
     margin-right: 12px;
-}
-.cont_wrap {
-    display: flex;
-    justify-content: start;
-    margin-bottom: 10px;
-}
-.sender {
-    background-color: #ffffff;
-    border-radius: 0px 10px 10px 10px;
-    max-width: 240px;
-    padding: 12px;
-    margin: 0;
-    font-size: 14px;
-}
-.message {
-    background-color: #000000;
-    color: #ffffff;
-    border-radius: 10px 0px 10px 10px;
-    max-width: 240px;
-    padding: 12px;
-    margin: 0;
-    font-size: 14px;
 }
 .chat_time {
     color: #767676;
@@ -75,29 +75,34 @@
     margin-right: 6px;
 }
 .input_div {
+    width: 390px;
     display: flex;
     justify-content: start;
+    position: absolute;
+    bottom: 0;
     background-color: #ffffff;
-    padding: 16px;
 }
 .img_button {
     width: 36px;
     height: 36px;
     padding: 0;
+    margin: 13px 12px 13px 16px;
+    cursor: pointer;
 }
 
 .inp_txt {
+    width: 250px;
     font-size: 14px;
     color: #c4c4c4;
     border: 0;
-    padding: 0;
-    margin-left: 12px;
+    margin: 0 12px 0 0;
 }
 .btn_submit {
     font-size: 14px;
     color: #c4c4c4;
     border: 0;
-    background-color: #ffffff;
     padding: 0;
-    margin-left: 12px;
+    margin-left: 13px;
+    background-color: #ffffff;
+    cursor: pointer;
 }
